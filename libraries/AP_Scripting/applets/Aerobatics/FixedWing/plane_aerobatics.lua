@@ -2302,7 +2302,7 @@ end
 --]]
 local function mavlink_receiver()
    local self = {}
-   local mavlink_msgs = require("mavlink_msgs")
+   local mavlink_msgs = require("MAVLink/mavlink_msgs")
    local NAMED_VALUE_FLOAT_msgid = mavlink_msgs.get_msgid("NAMED_VALUE_FLOAT")
    local msg_map = {}
    local jitter_correction = JitterCorrection(5000, 100)
